@@ -22,7 +22,7 @@
   --warning: #fff3e3;
   --danger: #e97171;
   --info: #3a3a3a;
-  --black: #000000;
+  --dark: #000000;
 
   /* fonts  */
   --font-poppins: "Poppins", sans-serif;
@@ -50,7 +50,7 @@
   --color-warning: var(--warning);
   --color-danger: var(--danger);
   --color-info: var(--info);
-  --color-black: var(--black);
+  --color-dark: var(--dark);
 
   /* custom fonts  */
   --font-poppins: var(--font-poppins);
