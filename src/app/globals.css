@@ -10,6 +10,10 @@
   --secondary: #333;
   --tertiary: #b0b0b0;
   --tertiary-light: #d9d9d9;
+  --quaternary: #f9f1e7;
+  --quinary: #242424;
+  --senary: #f4f5f7;
+  --septenary: #727272;
   --accent: #898989;
   --accent-light: #9f9f9f;
   --muted: #666;
@@ -34,6 +38,10 @@
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
   --color-tertiary-light: var(--tertiary-light);
+  --color-quaternary: var(--quaternary);
+  --color-quinary: var(--quinary);
+  --color-senary: var(--senary);
+  --color-septenary: var(--septenary);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-muted: var(--muted);
