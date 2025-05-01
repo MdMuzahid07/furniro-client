@@ -4,11 +4,8 @@ import React, { ReactNode } from "react";
 const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
       <main>{children}</main>
-      <footer></footer>
     </>
   );
 };
