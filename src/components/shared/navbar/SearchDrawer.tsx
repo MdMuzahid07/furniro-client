@@ -8,7 +8,7 @@ const SearchDrawer = () => {
 
   return (
     <li>
-      <button className="w-[32px]" onClick={() => setIsSearchDrawerOpen(!isSearchDrawerOpen)}>
+      <button className="md:w-[32px]" onClick={() => setIsSearchDrawerOpen(!isSearchDrawerOpen)}>
         <div className="hidden sm:flex">
           <SearchIcon />
         </div>
@@ -30,7 +30,10 @@ const SearchDrawer = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button className="absolute top-[22%] right-[30px] cursor-pointer md:top-[30%]">
+            <button
+              onClick={() => setIsSearchDrawerOpen(false)}
+              className="absolute top-[22%] right-[30px] cursor-pointer md:top-[30%]"
+            >
               <SearchIcon />
             </button>
           </div>
