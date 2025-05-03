@@ -44,11 +44,11 @@ const CartDropdown = () => {
             </div>
           </>
         }
-        style="w-[340px] md:w-[417px] h-[560px] sm:h-[650px] md:h-[746px] bg-white relative  -mr-[50px] sm:mr-[0px]"
+        style="w-[300px] sm:w-[340px] md:w-[417px] h-[560px] sm:h-[650px] md:h-[746px] bg-white relative  -mr-[50px] sm:mr-[0px]"
         closeOnOutsideClick={false}
       >
         <>
-          <div className="pt-[28px] pr-[30px] pl-[30px] md:pr-[40px]">
+          <div className="pt-[20px] pr-[20px] pl-[20px] sm:pt-[28px] sm:pr-[30px] sm:pl-[30px] md:pr-[40px]">
             {/* dropdown header  */}
             <div className="w-full max-w-[287px] border-b border-tertiary-light">
               <h1 className="pb-[26px] text-[18px] font-semibold text-dark md:text-[24px]">
@@ -66,7 +66,7 @@ const CartDropdown = () => {
 
           {/* dropdown footer  */}
           <div className="absolute bottom-0 w-full">
-            <div className="mb-[23px] flex items-center gap-[101px] pl-[30px]">
+            <div className="mb-[23px] flex items-center gap-[20px] pl-[30px] sm:gap-[101px]">
               <h3 className="text-[16px] text-dark">Subtotal</h3>
               <h1 className="text-[16px] font-semibold text-primary">Rs. 520,000.00</h1>
             </div>

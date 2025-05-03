@@ -5,13 +5,13 @@ import Image from "next/image";
 const CartDropDownCard = ({ product }: Record<string, any>) => {
   return (
     <div className="flex items-center justify-between">
-      <div className="flex items-center gap-[24px] md:gap-[32px]">
+      <div className="flex items-center gap-[15px] sm:gap-[32px]">
         <Image
           src={product?.image}
           width={300}
           height={300}
           alt={`${product?.name}-image`}
-          className="h-[90px] w-[90px] rounded-[10px] md:h-[105px] md:w-[105px]"
+          className="h-[80px] w-[80px] rounded-[10px] sm:h-[105px] sm:w-[105px]"
         />
 
         <div>
