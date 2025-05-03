@@ -17,9 +17,9 @@ const CartDropDownCard = ({ product }: Record<string, any>) => {
         <div>
           <h4>{product?.name}</h4>
           <div className="mt-[11px] flex items-center gap-[10px] md:gap-[15px]">
-            <h5 className="text-dark text-[16px] font-light">{product?.quantity}</h5>
-            <p className="text-dark text-[12px] font-[300]">X</p>
-            <h5 className="text-primary text-[12px] font-medium">
+            <h5 className="text-[16px] font-light text-dark">{product?.quantity}</h5>
+            <p className="text-[12px] font-[300] text-dark">X</p>
+            <h5 className="text-[12px] font-medium text-primary">
               <span>Rs.</span> {product?.price}
             </h5>
           </div>

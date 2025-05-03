@@ -21,7 +21,7 @@ const Drawer = ({ isOpen, onClose, children, from = "right", width = "300px" }: 
             animate={{ opacity: 0.5 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 z-40 bg-black"
+            className="fixed inset-0 z-40 bg-dark"
           />
 
           {/* drawer */}

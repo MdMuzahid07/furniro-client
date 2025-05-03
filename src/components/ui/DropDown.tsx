@@ -78,7 +78,7 @@ const DropDown: React.FC<DropDownProps> = ({
       {/* dropdown content */}
       {isOpen && (
         <div
-          className={`fixed top-0 right-0 z-50 transform bg-white transition-all duration-200 sm:absolute sm:top-auto ${
+          className={`fixed top-0 right-0 z-50 mt-[24px] transform bg-white transition-all duration-200 sm:absolute sm:top-auto ${
             isAnimating ? "translate-y-0 opacity-100 md:translate-y-2" : "-translate-y-4 opacity-0"
           } ${style}`}
         >
