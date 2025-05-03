@@ -7,6 +7,24 @@ import DropDown from "@/components/ui/DropDown";
 import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import CartDropDownCard from "./CartDropDownCard";
+
+const fakeCart = [
+  {
+    image: "/images/navbar/cart-drop-dummy-product-1.png",
+    name: "Asgaard sofa",
+    quantity: 1,
+    price: "250,000.00",
+    _id: "90v9V",
+  },
+  {
+    image: "/images/navbar/cart-drop-dummy-product-2.png",
+    name: "Casaliving Wood",
+    quantity: 1,
+    price: "270,000.00",
+    _id: "jhy%9^",
+  },
+];
 
 const Navbar = () => {
   return (
@@ -50,10 +68,45 @@ const Navbar = () => {
             <DropDown
               closeTriggerIcon={<CartClose />}
               trigger={<CartIcon />}
-              style="-mt-[75px] w-[300px] md:w-[417px] h-[400px] md:h-[746px] bg-white pl-[30px] pr-[30px] md:pr-[40px] pt-[28px]"
+              style=" -top-[75px] right-0 w-[300px] md:w-[417px] h-[500px] md:h-[746px] bg-white relative"
               closeOnOutsideClick={false}
             >
-              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, incidunt.</div>
+              <>
+                <div className="pt-[28px] pr-[30px] pl-[30px] md:pr-[40px]">
+                  {/* dropdown header  */}
+                  <div className="border-tertiary-light w-full max-w-[287px] border-b">
+                    <h1 className="text-dark pb-[26px] text-[18px] font-semibold md:text-[24px]">
+                      Shopping Cart
+                    </h1>
+                  </div>
+
+                  {/* dropdown main content */}
+                  <div className="mt-[42px] mb-[23px] min-h-full space-y-[20px] overflow-y-auto md:max-h-[460px]">
+                    {fakeCart?.map((product) => (
+                      <CartDropDownCard key={product?._id} product={product} />
+                    ))}
+                  </div>
+                </div>
+
+                {/* dropdown footer  */}
+                <div className="absolute bottom-0">
+                  <div className="mb-[23px] flex items-center gap-[101px] pl-[30px]">
+                    <h3 className="text-dark text-[16px]">Subtotal</h3>
+                    <h1 className="text-primary text-[16px] font-semibold">Rs. 520,000.00</h1>
+                  </div>
+                  <div className="border-tertiary-light flex flex-col items-center gap-[14px] border-t px-[27px] py-[28px] sm:flex-row">
+                    <button className="border-dark w-full rounded-full border px-[24px] py-[6px] text-[12px] md:px-[30px]">
+                      Cart
+                    </button>
+                    <button className="border-dark w-full rounded-full border px-[24px] py-[6px] text-[12px] md:px-[30px]">
+                      Checkout
+                    </button>
+                    <button className="border-dark w-full rounded-full border px-[24px] py-[6px] text-[12px] md:px-[30px]">
+                      Comparison
+                    </button>
+                  </div>
+                </div>
+              </>
             </DropDown>
           </li>
         </ul>
