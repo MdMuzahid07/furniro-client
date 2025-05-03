@@ -35,7 +35,7 @@ const UserDropdown = () => {
         closeTriggerStyle="absolute right-[30px] top-[30px]"
       >
         <div className="w-full px-[30px] pt-[28px]">
-          <h1 className="text-[18px] font-semibold text-dark">My Profile</h1>
+          <h1 className="text-[18px] font-semibold text-dark">Hi, Muzahid</h1>
 
           <div className="mt-[20px] w-full space-y-[15px] border-t border-tertiary-light pt-[20px]">
             <button>
