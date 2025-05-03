@@ -8,7 +8,7 @@ const SearchDrawer = () => {
 
   return (
     <li>
-      <button className="md:w-[32px]" onClick={() => setIsSearchDrawerOpen(!isSearchDrawerOpen)}>
+      <button className="cursor-pointer md:w-[32px]" onClick={() => setIsSearchDrawerOpen(true)}>
         <div className="hidden sm:flex">
           <SearchIcon />
         </div>
