@@ -44,7 +44,7 @@ const CartDropdown = () => {
             </div>
           </>
         }
-        style="-mt-[75px] w-[300px] md:w-[417px] h-[500px] md:h-[746px] bg-white relative"
+        style="w-[340px] md:w-[417px] h-[560px] sm:h-[650px] md:h-[746px] bg-white relative  -mr-[50px] sm:mr-[0px]"
         closeOnOutsideClick={false}
       >
         <>
@@ -57,7 +57,7 @@ const CartDropdown = () => {
             </div>
 
             {/* dropdown main content */}
-            <div className="mt-[42px] mb-[23px] min-h-full space-y-[20px] overflow-y-auto md:max-h-[460px]">
+            <div className="mt-[42px] mb-[23px] max-h-[360px] min-h-full space-y-[20px] overflow-y-auto md:max-h-[460px]">
               {fakeCart?.map((product) => (
                 <CartDropDownCard key={product?._id} product={product} />
               ))}
@@ -65,19 +65,19 @@ const CartDropdown = () => {
           </div>
 
           {/* dropdown footer  */}
-          <div className="absolute bottom-0">
+          <div className="absolute bottom-0 w-full">
             <div className="mb-[23px] flex items-center gap-[101px] pl-[30px]">
               <h3 className="text-[16px] text-dark">Subtotal</h3>
               <h1 className="text-[16px] font-semibold text-primary">Rs. 520,000.00</h1>
             </div>
-            <div className="flex flex-col items-center gap-[14px] border-t border-tertiary-light px-[27px] py-[28px] sm:flex-row">
-              <button className="w-full rounded-full border border-dark px-[24px] py-[6px] text-[12px] md:px-[30px]">
+            <div className="flex items-center gap-[14px] border-t border-tertiary-light px-[27px] py-[28px]">
+              <button className="px-auto w-full rounded-full border border-dark py-[6px] text-[12px] md:px-[30px]">
                 Cart
               </button>
-              <button className="w-full rounded-full border border-dark px-[24px] py-[6px] text-[12px] md:px-[30px]">
+              <button className="px-auto w-full rounded-full border border-dark py-[6px] text-[12px] md:px-[30px]">
                 Checkout
               </button>
-              <button className="w-full rounded-full border border-dark px-[24px] py-[6px] text-[12px] md:px-[30px]">
+              <button className="px-auto w-full rounded-full border border-dark py-[6px] text-[12px] md:px-[30px]">
                 Comparison
               </button>
             </div>

@@ -29,7 +29,7 @@ const Drawer = ({ isOpen, onClose, children, from = "right", width = "300px" }: 
             initial={{ x: from === "right" ? "100%" : "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: from === "right" ? "100%" : "-100%" }}
-            transition={{ type: "tween", ease: "easeOut", duration: 0.2 }}
+            transition={{ type: "tween", ease: [0.83, 0, 0.17, 1], duration: 0.7 }}
             style={{ width }}
             className={`fixed top-0 z-50 h-full bg-white shadow-xl ${
               from === "right" ? "right-0" : "left-0"
