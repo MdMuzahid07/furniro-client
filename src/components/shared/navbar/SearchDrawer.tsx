@@ -18,7 +18,7 @@ const SearchDrawer = () => {
       </button>
 
       <ProductSearchDrawer isOpen={isSearchDrawerOpen} onClose={() => setIsSearchDrawerOpen(false)}>
-        <div className="mx-auto max-w-[1440px] pt-[50px] md:pt-[60px]">
+        <div className="mx-auto max-w-[1440px] px-[20px] pt-[50px] md:pt-[60px] lg:px-[0px]">
           {/* search input  */}
           <div className="relative mx-auto w-full max-w-[700px]">
             <input
@@ -30,7 +30,7 @@ const SearchDrawer = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button className="absolute top-[30%] right-[30px] cursor-pointer">
+            <button className="absolute top-[22%] right-[30px] cursor-pointer md:top-[30%]">
               <SearchIcon />
             </button>
           </div>

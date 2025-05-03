@@ -18,7 +18,7 @@ const ProductSearchDrawer = ({ isOpen, onClose, children }: DrawerProps) => {
           animate={{ y: 0 }}
           exit={{ y: "100%" }}
           transition={{ type: "tween", ease: [0.83, 0, 0.17, 1], duration: 0.7 }}
-          className="fixed inset-0 z-50 mt-[100px] border-t border-tertiary-light bg-background shadow-xl"
+          className="fixed inset-0 z-50 mt-[70px] border-t border-tertiary-light bg-background shadow-xl md:mt-[100px]"
         >
           {children}
         </motion.div>
