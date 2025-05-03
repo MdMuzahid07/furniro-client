@@ -1,3 +1,4 @@
+"use client";
 import CartClose from "@/components/icons/CartClose";
 import CartIcon from "@/components/icons/CartIcon";
 import HeartIcon from "@/components/icons/HeartIcon";
@@ -8,6 +9,10 @@ import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import CartDropDownCard from "./CartDropDownCard";
+import { useState } from "react";
+import Drawer from "@/components/ui/Drawer";
+import NavIcon from "@/components/icons/NavIcon";
+import XIcon from "@/components/icons/XIcon";
 
 const fakeCart = [
   {
@@ -27,9 +32,11 @@ const fakeCart = [
 ];
 
 const Navbar = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
     <header className="bg-background sticky top-0 z-50">
-      <nav className="relative mx-auto flex h-[70px] max-w-[1440px] items-center justify-between pr-[54px] pl-[40px] md:h-[100px] md:pr-[100px] md:pl-[54px]">
+      <nav className="relative mx-auto flex h-[70px] w-full max-w-[1440px] items-center justify-between pr-[20px] pl-[20px] sm:pr-[54px] sm:pl-[40px] md:h-[100px] md:pl-[54px] xl:pr-[100px]">
         {/* logo */}
         <Link href="/" className="flex items-center gap-[5.5px]">
           <Image
@@ -37,13 +44,15 @@ const Navbar = () => {
             alt="furniro-main-logo"
             width={100}
             height={100}
-            className="h-[32px] w-[50px]"
+            className="h-auto w-[30px] md:h-[32px] md:w-[50px]"
           />
-          <h1 className="text-dark font-montserrat text-[34px] font-bold">Furniro</h1>
+          <h1 className="text-dark font-montserrat text-[18px] font-bold sm:text-[34px]">
+            Furniro
+          </h1>
         </Link>
 
         {/* nav links  */}
-        <ul className="hidden items-center gap-[55px] sm:flex md:ml-[106px] md:gap-[75px]">
+        <ul className="hidden items-center gap-[35px] md:ml-[106px] lg:flex xl:gap-[75px]">
           {navLinks?.map(({ label, ref }, index) => (
             <li key={index}>
               <Link href={ref} className="text-dark text-[16px] font-medium">
@@ -54,21 +63,54 @@ const Navbar = () => {
         </ul>
 
         {/* toggles  */}
-        <ul className="flex items-center gap-[35] md:gap-[45px]">
+        <ul className="flex items-center gap-[15px] sm:gap-[25] lg:gap-[45px]">
           <li>
-            <PersonIcon />
+            <div className="hidden sm:flex">
+              <PersonIcon />
+            </div>
+            <div className="flex sm:hidden">
+              <PersonIcon size={20} />
+            </div>
           </li>
           <li>
-            <SearchIcon />
+            <div className="hidden sm:flex">
+              <SearchIcon />
+            </div>
+            <div className="flex sm:hidden">
+              <SearchIcon size={20} />
+            </div>
           </li>
           <li>
-            <HeartIcon />
+            <div className="hidden sm:flex">
+              <HeartIcon />
+            </div>
+            <div className="flex sm:hidden">
+              <HeartIcon size={20} />
+            </div>
           </li>
           <li>
             <DropDown
-              closeTriggerIcon={<CartClose />}
-              trigger={<CartIcon />}
-              style=" -top-[75px] right-0 w-[300px] md:w-[417px] h-[500px] md:h-[746px] bg-white relative"
+              closeTriggerIcon={
+                <>
+                  <div className="hidden sm:flex">
+                    <CartClose />
+                  </div>
+                  <div className="flex sm:hidden">
+                    <CartClose size={20} />
+                  </div>
+                </>
+              }
+              trigger={
+                <>
+                  <div className="hidden sm:flex">
+                    <CartIcon />
+                  </div>
+                  <div className="flex sm:hidden">
+                    <CartIcon size={20} />
+                  </div>
+                </>
+              }
+              style="-mt-[75px] w-[300px] md:w-[417px] h-[500px] md:h-[746px] bg-white relative"
               closeOnOutsideClick={false}
             >
               <>
@@ -108,6 +150,49 @@ const Navbar = () => {
                 </div>
               </>
             </DropDown>
+          </li>
+          <li className="flex lg:hidden">
+            <button className="w-[32px]" onClick={() => setIsDrawerOpen(true)}>
+              {!isDrawerOpen ? (
+                <>
+                  <div className="hidden sm:flex">
+                    <NavIcon size={32} />
+                  </div>
+                  <div className="flex sm:hidden">
+                    <NavIcon size={24} />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="hidden sm:flex">
+                    <XIcon size={32} />
+                  </div>
+                  <div className="flex sm:hidden">
+                    <XIcon />
+                  </div>
+                </>
+              )}
+            </button>
+
+            <Drawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+              <div className="relative w-full p-[27px]">
+                <div className="absolute top-[27px] right-[27px]">
+                  <button onClick={() => setIsDrawerOpen(false)}>
+                    <XIcon />
+                  </button>
+                </div>
+
+                <ul className="mt-[50px] space-y-[20px]">
+                  {navLinks?.map(({ label, ref }, index) => (
+                    <li key={index}>
+                      <Link href={ref} className="text-dark text-[16px] font-medium">
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Drawer>
           </li>
         </ul>
       </nav>
