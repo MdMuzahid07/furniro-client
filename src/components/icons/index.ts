@@ -14,3 +14,5 @@ export * from "./SearchIcon";
 export * from "./XIcon";
 export * from "./ShareIcon";
 export * from "./CompareIcon";
+export * from "./GallerySliderActiveIndicatorIcon";
+export * from "./GallerySliderInactiveIndicatorIcon";
