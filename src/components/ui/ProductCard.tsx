@@ -15,9 +15,9 @@ interface IProduct {
 
 const ProductCard = ({ product }: { product: IProduct }) => {
   return (
-    <div className="group relative h-[446px] w-full overflow-hidden bg-senary transition-all duration-300 xl:max-w-[285px]">
+    <div className="group relative h-[500px] w-full overflow-hidden bg-senary transition-all duration-300 sm:h-[446px] xl:max-w-[285px]">
       {/* card image */}
-      <div className="h-[301px] w-full">
+      <div className="h-[355px] w-full sm:h-[301px]">
         <Image
           src={product?.image}
           width={400}
