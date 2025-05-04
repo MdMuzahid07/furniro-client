@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer className="border-t border-tertiary-light bg-background">
       <div className="mx-auto max-w-[1440px] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[100px]">
-        <div className="flex gap-[145px] py-[24px] sm:py-[30px] md:py-[48px]">
-          <div className="flex gap-[144.5px]">
+        <div className="flex flex-col py-[24px] sm:py-[30px] md:flex-row md:gap-[70px] md:py-[48px] lg:gap-[145px]">
+          <div className="flex flex-col justify-between sm:flex-row md:justify-start md:gap-[40px] lg:gap-[144.5px]">
             <div>
               <h1 className="text-[24px] font-bold text-dark">Furniro.</h1>
               <p className="mt-[30px] text-[14px] text-accent-light sm:mt-[50px] sm:text-[16px]">
@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex gap-[72px]">
+          <div className="mt-[40px] flex flex-col justify-between sm:flex-row md:mt-[0px] md:justify-start md:gap-[40px] lg:gap-[72px]">
             <ul>
               <li className="mb-[55px] text-[16px] font-medium text-accent-light">Help</li>
               <li className="mb-[46px]">
