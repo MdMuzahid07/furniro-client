@@ -84,6 +84,10 @@ const OurProducts = () => {
       <div className="mt-[32px] grid grid-cols-1 gap-[24px] sm:grid-cols-2 sm:gap-[32px] lg:grid-cols-3 xl:grid-cols-4">
         {products?.map((product) => <ProductCard key={product?._id} product={product} />)}
       </div>
+
+      <button className="mx-auto mt-[32px] flex h-[48px] w-[245px] cursor-pointer items-center justify-center border border-primary text-[16px] leading-[150%] font-semibold text-primary transition-all duration-200 hover:bg-primary hover:text-background">
+        Show More
+      </button>
     </section>
   );
 };
