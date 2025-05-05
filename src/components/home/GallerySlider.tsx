@@ -4,6 +4,51 @@ import GallerySliderInactiveIndicatorIcon from "../icons/GallerySliderInactiveIn
 import ArrowRightIcon from "../icons/ArrowRightIcon";
 import ArrowRightTwo from "../icons/ArrowRightTwoIcon";
 import HorizontalLineIcon from "../icons/HorizontalLineIcon";
+// Import Swiper React components
+// import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+// import "swiper/css";
+// import "./GallerySlider.css";
+
+// const slideData = [
+//   {
+//     _id: "gallerySliderHome_1",
+//     image: "/images/home/gallerySlider/gallery-img-1.png",
+//     number: "01",
+//     title: "Bed Room",
+//     subtitle: "Inner Peace",
+//     mainWidth: 404,
+//     mainHeight: 582,
+//     mobileWidth: 270,
+//     mobileHeight: 380,
+//     clickLink: ""
+//   },
+//   {
+//     _id: "gallerySliderHome_2",
+//     image: "/images/home/gallerySlider/gallery-img-2.png",
+//     number: "01",
+//     title: "Bed Room",
+//     subtitle: "Inner Peace",
+//     mainWidth: 372,
+//     mainHeight: 486,
+//     mobileWidth: 270,
+//     mobileHeight: 328,
+//     clickLink: ""
+//   },
+//   {
+//     _id: "gallerySliderHome_3",
+//     image: "/images/home/gallerySlider/gallery-img-3.png",
+//     number: "01",
+//     title: "Bed Room",
+//     subtitle: "Inner Peace",
+//     mainWidth: 372,
+//     mainHeight: 486,
+//     mobileWidth: 270,
+//     mobileHeight: 328,
+//     clickLink: ""
+//   },
+// ];
 
 const GallerySlider = () => {
   return (
@@ -63,7 +108,7 @@ const GallerySlider = () => {
 
         <div className="h-[328px] max-w-[270px] min-w-[270px] sm:h-[486px] sm:max-w-[372px] sm:min-w-[372px]">
           <Image
-            src="/images/home/gallerySlider/gallery-img-2.png"
+            src="/images/home/gallerySlider/gallery-img-3.png"
             width={500}
             height={700}
             alt="gallery-slide-image"

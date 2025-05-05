@@ -1,5 +1,11 @@
+import LocationBar from "@/components/shared/LocationBar";
+
 const ShopPage = () => {
-  return <div>ShopPage</div>;
+  return (
+    <>
+      <LocationBar title="Shop" link="shop" />
+    </>
+  );
 };
 
 export default ShopPage;
