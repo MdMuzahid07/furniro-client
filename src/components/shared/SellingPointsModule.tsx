@@ -32,8 +32,8 @@ const SellingPointsData = [
 
 const SellingPointsModule = () => {
   return (
-    <section className="mx-auto h-auto max-w-[1440px] bg-warning-light px-[40px] md:h-[270px] md:px-[53px]">
-      <ul className="flex h-full w-full items-center justify-between">
+    <section className="mx-auto h-auto max-w-[1440px] bg-warning-light px-[20px] py-[40px] sm:px-[40px] md:h-[270px] md:px-[53px] md:py-[0px]">
+      <ul className="xl:grid-none grid h-full w-full grid-cols-1 items-center justify-between gap-[40px] sm:grid-cols-2 xl:flex xl:items-center xl:justify-between xl:gap-[0px]">
         {SellingPointsData?.map(({ _id, icon, title, subtitle }) => (
           <li key={_id} className="flex items-center gap-[10px]">
             {icon}
