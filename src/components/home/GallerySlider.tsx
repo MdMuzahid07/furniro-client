@@ -5,7 +5,7 @@ import ArrowRightIcon from "../icons/ArrowRightIcon";
 
 const GallerySlider = () => {
   return (
-    <section className="mx-auto flex max-w-[1440px] items-center gap-[42px] bg-primary-light py-[44px] pl-[20px] md:h-[670px] md:pl-[40px] lg:pl-[56px] xl:pl-[100px]">
+    <section className="mx-auto flex h-auto max-w-[1440px] flex-col items-center gap-[42px] bg-primary-light py-[44px] pl-[20px] md:pl-[40px] lg:h-[670px] lg:flex-row lg:pl-[56px] xl:pl-[100px]">
       <div className="w-full lg:max-w-[422px]">
         <h1 className="mb-[7px] text-[24px] leading-[120%] font-bold text-info sm:text-[40px]">
           50+ Beautiful rooms inspiration
@@ -20,8 +20,8 @@ const GallerySlider = () => {
       </div>
 
       {/* slider  */}
-      <div className="relative flex w-full items-start gap-[24px] overflow-hidden">
-        <div className="h-[582px] max-w-[404px] min-w-[404px]">
+      <div className="relative flex w-full items-start gap-[24px] overflow-hidden pb-[40px] sm:pb-[0px]">
+        <div className="h-[380] max-w-[270px] min-w-[270px] sm:h-[582px] sm:max-w-[404px] sm:min-w-[404px]">
           <Image
             src="/images/home/gallerySlider/gallery-img-1.png"
             width={500}
@@ -32,7 +32,7 @@ const GallerySlider = () => {
           />
         </div>
 
-        <div className="h-[486px] max-w-[372px] min-w-[372px]">
+        <div className="h-[328px] max-w-[270px] min-w-[270px] sm:h-[486px] sm:max-w-[372px] sm:min-w-[372px]">
           <Image
             src="/images/home/gallerySlider/gallery-img-2.png"
             width={500}
@@ -43,7 +43,7 @@ const GallerySlider = () => {
           />
         </div>
 
-        <div className="h-[486px] max-w-[372px] min-w-[372px]">
+        <div className="h-[328px] max-w-[270px] min-w-[270px] sm:h-[486px] sm:max-w-[372px] sm:min-w-[372px]">
           <Image
             src="/images/home/gallerySlider/gallery-img-2.png"
             width={500}
@@ -55,7 +55,7 @@ const GallerySlider = () => {
         </div>
 
         {/* slider indicator  */}
-        <div className="absolute bottom-[29px] left-[428px] flex items-center gap-[20px]">
+        <div className="absolute bottom-0 left-[75px] flex items-center gap-[20px] sm:bottom-[29px] sm:left-[428px]">
           <GallerySliderActiveIndicatorIcon />
           <GallerySliderInactiveIndicatorIcon />
           <GallerySliderInactiveIndicatorIcon />
@@ -63,10 +63,10 @@ const GallerySlider = () => {
 
         {/* slider navigation  */}
         <div className="absolute flex h-full w-full items-center justify-between pr-[54px] pl-[24px]">
-          <button className="flex h-[48px] w-[48px] rotate-180 cursor-pointer items-center justify-center rounded-full bg-background shadow-[0px_4px_14px_rgba(0,0,0,0.16)]">
+          <button className="flex h-[38px] w-[38px] rotate-180 cursor-pointer items-center justify-center rounded-full bg-background shadow-[0px_4px_14px_rgba(0,0,0,0.16)] sm:h-[48px] sm:w-[48px]">
             <ArrowRightIcon />
           </button>
-          <button className="flex h-[48px] w-[48px] cursor-pointer items-center justify-center rounded-full bg-background shadow-[0px_4px_14px_rgba(0,0,0,0.16)]">
+          <button className="flex h-[38px] w-[38px] cursor-pointer items-center justify-center rounded-full bg-background shadow-[0px_4px_14px_rgba(0,0,0,0.16)] sm:h-[48px] sm:w-[48px]">
             <ArrowRightIcon />
           </button>
         </div>
