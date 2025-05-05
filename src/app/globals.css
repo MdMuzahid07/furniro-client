@@ -20,6 +20,7 @@
   --muted-light: #616161;
   --success: #2ec1ac;
   --warning: #fff3e3;
+  --warning-light: #faf3ea;
   --danger: #e97171;
   --info: #3a3a3a;
   --dark: #000000;
@@ -48,6 +49,7 @@
   --color-muted-light: var(--muted-light);
   --color-success: var(--success);
   --color-warning: var(--warning);
+  --color-warning-light: var(--warning-light);
   --color-danger: var(--danger);
   --color-info: var(--info);
   --color-dark: var(--dark);
