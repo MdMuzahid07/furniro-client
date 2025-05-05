@@ -2,6 +2,8 @@ import Image from "next/image";
 import GallerySliderActiveIndicatorIcon from "../icons/GallerySliderActiveIndicatorIcon";
 import GallerySliderInactiveIndicatorIcon from "../icons/GallerySliderInactiveIndicatorIcon";
 import ArrowRightIcon from "../icons/ArrowRightIcon";
+import ArrowRightTwo from "../icons/ArrowRightTwoIcon";
+import HorizontalLineIcon from "../icons/HorizontalLineIcon";
 
 const GallerySlider = () => {
   return (
@@ -21,7 +23,7 @@ const GallerySlider = () => {
 
       {/* slider  */}
       <div className="relative flex w-full items-start gap-[24px] overflow-hidden pb-[40px] sm:pb-[0px]">
-        <div className="h-[380] max-w-[270px] min-w-[270px] sm:h-[582px] sm:max-w-[404px] sm:min-w-[404px]">
+        <div className="relative h-[380] max-w-[270px] min-w-[270px] sm:h-[582px] sm:max-w-[404px] sm:min-w-[404px]">
           <Image
             src="/images/home/gallerySlider/gallery-img-1.png"
             width={500}
@@ -30,6 +32,20 @@ const GallerySlider = () => {
             priority
             className="h-full w-full"
           />
+
+          <div className="absolute bottom-[24px] left-[24px] flex items-end">
+            <div className="h-[130px] w-[217px] bg-background/72 py-[32px] pr-[17px] pl-[32px] backdrop-blur-[1.5px]">
+              <p className="mb-[8px] flex items-center gap-[8px] text-[16px] leading-[150%] font-medium text-muted-light">
+                <span>01</span>
+                <HorizontalLineIcon />
+                <span>Bed Room</span>
+              </p>
+              <h5 className="text-[28px] leading-[120%] font-semibold text-info">Inner Peace</h5>
+            </div>
+            <button className="flex h-[48px] w-[48px] items-center justify-center bg-primary">
+              <ArrowRightTwo />
+            </button>
+          </div>
         </div>
 
         <div className="h-[328px] max-w-[270px] min-w-[270px] sm:h-[486px] sm:max-w-[372px] sm:min-w-[372px]">
