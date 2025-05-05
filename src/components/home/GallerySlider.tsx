@@ -1,6 +1,7 @@
 import Image from "next/image";
 import GallerySliderActiveIndicatorIcon from "../icons/GallerySliderActiveIndicatorIcon";
 import GallerySliderInactiveIndicatorIcon from "../icons/GallerySliderInactiveIndicatorIcon";
+import ArrowRightIcon from "../icons/ArrowRightIcon";
 
 const GallerySlider = () => {
   return (
@@ -58,6 +59,16 @@ const GallerySlider = () => {
           <GallerySliderActiveIndicatorIcon />
           <GallerySliderInactiveIndicatorIcon />
           <GallerySliderInactiveIndicatorIcon />
+        </div>
+
+        {/* slider navigation  */}
+        <div className="absolute flex h-full w-full items-center justify-between pr-[54px] pl-[24px]">
+          <button className="flex h-[48px] w-[48px] rotate-180 cursor-pointer items-center justify-center rounded-full bg-background shadow-[0px_4px_14px_rgba(0,0,0,0.16)]">
+            <ArrowRightIcon />
+          </button>
+          <button className="flex h-[48px] w-[48px] cursor-pointer items-center justify-center rounded-full bg-background shadow-[0px_4px_14px_rgba(0,0,0,0.16)]">
+            <ArrowRightIcon />
+          </button>
         </div>
       </div>
     </section>
