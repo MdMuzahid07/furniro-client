@@ -119,11 +119,11 @@ const ProductDetailsSlider = () => {
             <p className="mb-[12px] text-[13px] text-accent-light">Size</p>
 
             <div className="flex items-center gap-[16px]">
-              <button className="h-[30px] w-[30px] bg-primary">L</button>
-              <button className="flex h-[30px] w-[30px] items-center justify-center rounded-[5px] bg-quaternary text-[13px] text-dark">
+              <button className="h-[30px] w-[30px] cursor-pointer bg-primary">L</button>
+              <button className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[5px] bg-quaternary text-[13px] text-dark">
                 XL
               </button>
-              <button className="flex h-[30px] w-[30px] items-center justify-center rounded-[5px] bg-quaternary text-[13px] text-dark">
+              <button className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[5px] bg-quaternary text-[13px] text-dark">
                 XS
               </button>
             </div>
@@ -134,9 +134,9 @@ const ProductDetailsSlider = () => {
             <p className="mb-[12px] text-[14px] text-accent-light">Color</p>
 
             <div className="flex items-center gap-[16px]">
-              <button className="h-[30px] w-[30px] rounded-full bg-[#816DFA]"></button>
-              <button className="h-[30px] w-[30px] rounded-full bg-dark"></button>
-              <button className="h-[30px] w-[30px] rounded-full bg-primary"></button>
+              <button className="h-[30px] w-[30px] cursor-pointer rounded-full bg-[#816DFA]"></button>
+              <button className="h-[30px] w-[30px] cursor-pointer rounded-full bg-dark"></button>
+              <button className="h-[30px] w-[30px] cursor-pointer rounded-full bg-primary"></button>
             </div>
           </div>
 
@@ -144,16 +144,16 @@ const ProductDetailsSlider = () => {
           <div className="flex flex-col items-center gap-[18px] sm:flex-row">
             <div className="flex w-full items-center gap-[18px] sm:w-fit">
               <div className="flex h-[64px] w-[100px] items-center justify-between rounded-[10px] border border-accent-light px-[15px] sm:w-[123px]">
-                <button>-</button>
+                <button className="cursor-pointer">-</button>
                 <span className="text-[16px] font-medium text-dark">1</span>
-                <button>+</button>
+                <button className="cursor-pointer">+</button>
               </div>
 
-              <button className="flex h-[64px] w-full items-center justify-center rounded-[15px] border border-dark text-[20px] text-dark sm:w-[180px] lg:w-[170px] xl:w-[215px]">
+              <button className="flex h-[64px] w-full cursor-pointer items-center justify-center rounded-[15px] border border-dark text-[20px] text-dark sm:w-[180px] lg:w-[170px] xl:w-[215px]">
                 Add To Cart
               </button>
             </div>
-            <button className="flex h-[64px] w-full items-center justify-center rounded-[15px] border border-dark text-[20px] text-dark sm:w-[180px] lg:w-[170px] xl:w-[215px]">
+            <button className="flex h-[64px] w-full cursor-pointer items-center justify-center rounded-[15px] border border-dark text-[20px] text-dark sm:w-[180px] lg:w-[170px] xl:w-[215px]">
               + Compare
             </button>
           </div>
