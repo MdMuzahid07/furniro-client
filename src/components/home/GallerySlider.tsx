@@ -34,15 +34,17 @@ const GallerySlider = () => {
           />
 
           <div className="absolute bottom-[24px] left-[24px] flex items-end">
-            <div className="h-[130px] w-[217px] bg-background/72 py-[32px] pr-[17px] pl-[32px] backdrop-blur-[1.5px]">
-              <p className="mb-[8px] flex items-center gap-[8px] text-[16px] leading-[150%] font-medium text-muted-light">
+            <div className="h-[100px] w-[180px] bg-background/72 py-[24px] pr-[17px] pl-[24px] backdrop-blur-[1.5px] sm:h-[130px] sm:w-[217px] sm:py-[32px] sm:pl-[32px]">
+              <p className="mb-[8px] flex items-center gap-[5] text-[14px] leading-[150%] font-medium text-muted-light sm:gap-[8px] sm:text-[16px]">
                 <span>01</span>
                 <HorizontalLineIcon />
                 <span>Bed Room</span>
               </p>
-              <h5 className="text-[28px] leading-[120%] font-semibold text-info">Inner Peace</h5>
+              <h5 className="text-[20px] leading-[120%] font-semibold text-info sm:text-[28px]">
+                Inner Peace
+              </h5>
             </div>
-            <button className="flex h-[48px] w-[48px] items-center justify-center bg-primary">
+            <button className="flex h-[38px] w-[38px] items-center justify-center bg-primary sm:h-[48px] sm:w-[48px]">
               <ArrowRightTwo />
             </button>
           </div>
