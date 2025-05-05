@@ -20,7 +20,7 @@ const ShareYourSetupWith = () => {
         #FurniroFurniture
       </h1>
 
-      <div className="mt-[43px] flex items-center gap-[16px] xl:-mt-[28px]">
+      <div className="mt-[43px] flex flex-col items-center gap-[16px] lg:flex-row xl:-mt-[28px]">
         <div className="flex flex-col gap-[16px]">
           <div className="flex items-baseline gap-[16px]">
             <Image
@@ -59,16 +59,16 @@ const ShareYourSetupWith = () => {
             </div>
           </div>
         </div>
-        <div className="w-full xl:-mt-[14px] xl:max-w-[295px]">
+        <div className="w-full sm:max-w-[295px] xl:-mt-[14px]">
           <Image
             src={img5}
             width={400}
             height={500}
             alt="galley-like-img-bedroom"
-            className="h-[392px] w-[295px] object-cover object-center"
+            className="h-[392px] w-full object-cover object-center sm:w-[295px]"
           />
         </div>
-        <div className="flex w-full max-w-[570px] flex-col gap-[16px]">
+        <div className="flex w-full flex-col items-center gap-[16px] xl:max-w-[570px] xl:items-end">
           <div className="flex items-baseline gap-[16px]">
             <Image
               src={img6}
