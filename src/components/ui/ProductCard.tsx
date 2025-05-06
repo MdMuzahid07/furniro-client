@@ -1,8 +1,9 @@
+"use client";
 import Image from "next/image";
 import CompareIcon from "../icons/CompareIcon";
 import HeartIcon from "../icons/HeartIcon";
 import ShareIcon from "../icons/ShareIcon";
-
+import Link from "next/link";
 interface IProduct {
   image: string;
   name: string;
@@ -62,10 +63,13 @@ const ProductCard = ({ product }: { product: IProduct }) => {
             <ShareIcon />
             <span className="text-[16px] leading-[150%] font-semibold">Share</span>
           </button>
-          <button className="flex cursor-pointer items-center gap-[2px] text-background">
+          <Link
+            href="/product-comparison"
+            className="flex cursor-pointer items-center gap-[2px] text-background"
+          >
             <CompareIcon />
             <span className="text-[16px] leading-[150%] font-semibold">Compare</span>
-          </button>
+          </Link>
           <button className="flex cursor-pointer items-center gap-[2px] text-background">
             <HeartIcon size={16} />
             <span className="text-[16px] leading-[150%] font-semibold">Like</span>
