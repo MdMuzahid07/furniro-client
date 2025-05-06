@@ -18,7 +18,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Furniro",
-  description: "",
+  description:
+    "Discover our curated collection of modern, elegant furniture for your home. Browse through quality sofas, bedroom furniture, and home decor at competitive prices.",
 };
 
 export default function RootLayout({
