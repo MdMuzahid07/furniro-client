@@ -9,6 +9,9 @@ import { FreeMode, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper/types";
 import StartIcon from "../icons/StartIcon";
+import FaceBookIcon from "../icons/FaceBookIcon";
+import LinkedInIcon from "../icons/LinkedInIcon";
+import TwitterIcon from "../icons/TwitterIcon";
 
 const ProductDetailsSlider = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
@@ -119,7 +122,9 @@ const ProductDetailsSlider = () => {
             <p className="mb-[12px] text-[13px] text-accent-light">Size</p>
 
             <div className="flex items-center gap-[16px]">
-              <button className="h-[30px] w-[30px] cursor-pointer bg-primary">L</button>
+              <button className="h-[30px] w-[30px] cursor-pointer rounded-[5px] bg-primary">
+                L
+              </button>
               <button className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-[5px] bg-quaternary text-[13px] text-dark">
                 XL
               </button>
@@ -156,6 +161,33 @@ const ProductDetailsSlider = () => {
             <button className="flex h-[64px] w-full cursor-pointer items-center justify-center rounded-[15px] border border-dark text-[20px] text-dark sm:w-[180px] lg:w-[170px] xl:w-[215px]">
               + Compare
             </button>
+          </div>
+
+          {/* product specifications */}
+          <div className="mt-[40px] border-t border-tertiary-light pt-[30px] sm:pt-[41px] md:mt-[50px] lg:mt-[60px]">
+            <ul className="space-y-[12px]">
+              <li className="flex items-center text-[16px] text-accent-light">
+                <p className="pr-[61px]">SKU</p> : <span className="pl-[12px]">SS001</span>
+              </li>
+
+              <li className="flex items-center text-[16px] text-accent-light">
+                <p className="pr-[16px]">Category</p> : <span className="pl-[12px]">Sofas</span>
+              </li>
+
+              <li className="flex items-center text-[16px] text-accent-light">
+                <p className="pr-[52px]">Tags</p> :{" "}
+                <span className="pl-[12px]">Sofa, Chair, Home, Shop</span>
+              </li>
+
+              <li className="flex items-center text-[16px] text-accent-light">
+                <p className="pr-[44px]">Share</p> :{" "}
+                <div className="flex items-center gap-[25px] pl-[12px]">
+                  <FaceBookIcon />
+                  <LinkedInIcon />
+                  <TwitterIcon />
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
