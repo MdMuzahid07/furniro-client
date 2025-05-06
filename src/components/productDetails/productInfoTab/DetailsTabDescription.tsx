@@ -20,21 +20,25 @@ const DetailsTabDescription = () => {
           guitar-influenced leather strap enables easy and stylish travel.
         </p>
       </div>
-      <div className="mt-[20px] flex flex-col items-center gap-[29px] px-[20px] sm:mt-[36px] sm:flex-row md:px-[40px] lg:px-[56px] xl:px-[100px]">
-        <Image
-          src="/images/details-page-image-sofa.png"
-          width={700}
-          height={400}
-          alt="details-page-sofa-image"
-          className="h-[348px] w-full rounded-[10px]"
-        />
-        <Image
-          src="/images/details-page-img-sofa.png"
-          width={700}
-          height={400}
-          alt="details-page-sofa-image"
-          className="h-[348px] w-full rounded-[10px]"
-        />
+      <div className="mt-[20px] flex flex-col items-center gap-[29px] px-[20px] sm:mt-[36px] md:px-[40px] lg:flex-row lg:px-[56px] xl:px-[100px]">
+        <div className="h-auto w-full lg:h-[348px] lg:max-w-[605px]">
+          <Image
+            src="/images/details-page-image-sofa.png"
+            width={700}
+            height={400}
+            alt="details-page-sofa-image"
+            className="h-full w-full rounded-[10px]"
+          />
+        </div>
+        <div className="h-auto w-full lg:h-[348px] lg:max-w-[605px]">
+          <Image
+            src="/images/details-page-img-sofa.png"
+            width={700}
+            height={400}
+            alt="details-page-sofa-image"
+            className="h-full w-full rounded-[10px]"
+          />
+        </div>
       </div>
     </div>
   );

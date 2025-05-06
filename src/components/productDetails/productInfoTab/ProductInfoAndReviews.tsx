@@ -25,14 +25,14 @@ const ProductInfoAndReviews = () => {
     <section className="mx-auto max-w-[1440px] border-t border-b border-tertiary-light pt-[30px] pb-[40px] sm:pt-[48px] sm:pb-[50px] md:pb-[66px]">
       {/* // tab nav  */}
 
-      <div className="flex w-full items-center justify-center gap-[52px]">
+      <div className="flex w-full items-center justify-center gap-[10px] sm:gap-[52px]">
         {tabs?.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveTab(index)}
             className={`cursor-pointer ${
               activeTab === index ? "text-dark" : "text-accent-light"
-            } text-[14px] font-medium sm:text-[16px] md:text-[24px]`}
+            } text-[12px] font-medium sm:text-[16px] md:text-[24px]`}
           >
             {tab.title}
           </button>

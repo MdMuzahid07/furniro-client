@@ -25,7 +25,7 @@ const ProductDetailsSlider = () => {
   ];
 
   return (
-    <section className="mx-auto max-w-[1440px] bg-background px-5 pt-9 md:px-10 lg:px-14 lg:pb-[85px] xl:px-[100px]">
+    <section className="mx-auto max-w-[1440px] bg-background px-5 pt-9 pb-[40px] md:px-10 lg:px-14 lg:pb-[85px] xl:px-[100px]">
       <div className="flex w-full flex-col gap-[40px] lg:flex-row lg:gap-[20px] xl:gap-[105px]">
         <div className="flex flex-col-reverse gap-[24px] lg:flex-row xl:gap-[32px]">
           {/* thumbnail images ,vertical on desktop, horizontal on mobile */}

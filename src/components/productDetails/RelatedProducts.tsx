@@ -41,7 +41,7 @@ const products = [
 
 const RelatedProducts = () => {
   return (
-    <section className="mx-auto max-w-[1440px] pt-[55px] pb-[92px] md:px-[40px] lg:px-[56px] xl:px-[102px]">
+    <section className="mx-auto max-w-[1440px] px-[20px] pt-[55px] pb-[92px] md:px-[40px] lg:px-[56px] xl:px-[102px]">
       <h1 className="text-[24px] leading-[120%] font-medium md:text-center md:text-[36px]">
         Related Products
       </h1>
