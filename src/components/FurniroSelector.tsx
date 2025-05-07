@@ -36,7 +36,7 @@ const FurniroSelector = ({
           id={id}
           value={value}
           onChange={onChange}
-          className={`${style || "mt-[22px] h-[75px] w-full appearance-none rounded-[10px] border border-accent-light px-[18px] pr-[40px] pl-[18px] text-[20px] leading-[126.5%] focus:border-primary focus:outline-none"}`}
+          className={`${style || "mt-[22px] h-[50px] w-full appearance-none rounded-[10px] border border-accent-light px-[12px] pr-[40px] pl-[18px] text-[16px] leading-[126.5%] focus:border-primary focus:outline-none sm:h-[75px] sm:px-[18px] sm:text-[20px]"}`}
         >
           <option className="text-accent-light" value="" disabled>
             {placeholderText || "Choose a Country"}
@@ -47,7 +47,7 @@ const FurniroSelector = ({
             </option>
           ))}
         </select>
-        <div className={`${iconStyle || "absolute top-[50px] right-[27px]"}`}>
+        <div className={`${iconStyle || "absolute top-[37px] right-[27px] sm:top-[50px]"}`}>
           <ArrowDownBlackIcon />
         </div>
       </div>
