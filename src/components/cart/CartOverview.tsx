@@ -1,8 +1,12 @@
+"use client";
+import { useRouter } from "next/navigation";
 import CartCard from "./CartCard";
 
 const CartOverview = () => {
+  const router = useRouter();
+
   return (
-    <section className="xl:px-[100px]pt-[40px] mx-auto w-full max-w-[1440px] px-[20px] pb-[40] sm:px-[40px] sm:pt-[50px] sm:pb-[50px] md:px-[60px] md:pb-[70px] lg:px-[80px] lg:pt-[72px] lg:pb-[85px]">
+    <section className="mx-auto w-full max-w-[1440px] px-[20px] pt-[40px] pb-[40] sm:px-[40px] sm:pt-[50px] sm:pb-[50px] md:px-[60px] md:pb-[70px] lg:px-[80px] lg:pt-[72px] lg:pb-[85px] xl:px-[100px]">
       <div className="flex w-full flex-col items-center gap-[30px] 2xl:flex-row 2xl:items-start">
         <div className="w-full overflow-x-auto lg:w-auto">
           <div className="w-[817px]">
@@ -41,7 +45,10 @@ const CartOverview = () => {
           </div>
 
           <div className="flex justify-end 2xl:justify-center">
-            <button className="mt-[42px] flex h-[58.954px] w-full items-center justify-center rounded-[15px] border border-dark sm:w-[222px]">
+            <button
+              onClick={() => router.push("/checkout")}
+              className="mt-[42px] flex h-[58.954px] w-full cursor-pointer items-center justify-center rounded-[15px] border border-dark sm:w-[222px]"
+            >
               Check Out
             </button>
           </div>
