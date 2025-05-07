@@ -14,6 +14,7 @@
   --quinary: #242424;
   --senary: #f4f5f7;
   --septenary: #727272;
+  --septenary-light: #e8e8e8;
   --accent: #898989;
   --accent-light: #9f9f9f;
   --muted: #666;
@@ -43,6 +44,7 @@
   --color-quinary: var(--quinary);
   --color-senary: var(--senary);
   --color-septenary: var(--septenary);
+  --color-septenary-light: var(--septenary-light);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-muted: var(--muted);

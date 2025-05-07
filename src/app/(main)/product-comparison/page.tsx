@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const ProductComparison = () => {
   return (
     <>
-      <LocationBar link="" title="Product Comparison" />
+      <LocationBar link="" title="Comparison" />
       <Comparison />
       <SellingPointsModule />
     </>
