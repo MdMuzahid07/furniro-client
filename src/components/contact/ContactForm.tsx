@@ -35,9 +35,9 @@ const ContactForm = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-[30px] pt-[30px] sm:pt-[40px] md:flex-row md:pt-[58px] lg:pt-[79px] xl:pt-[128.12px]">
+      <div className="flex flex-col gap-[40px] pt-[70px] sm:pt-[40px] md:pt-[58px] lg:flex-row lg:gap-[30px] lg:pt-[79px] xl:pt-[128.12px]">
         {/* contact => address  */}
-        <aside className="flex w-full flex-col gap-[42px] pl-[0px] sm:flex-row sm:pl-[35px] md:max-w-[393px] md:flex-col md:pl-[54px]">
+        <aside className="mr-[0px] flex w-full flex-col gap-[42px] pl-[0px] md:mr-[35px] md:max-w-[393px] lg:mr-[75px] lg:pl-[54px]">
           {contactInfo?.map(({ icon, title, subtitle }, index) => (
             <div key={index} className="flex gap-[30px]">
               {icon}
@@ -51,7 +51,58 @@ const ContactForm = () => {
 
         {/* contact => form  */}
 
-        <form action=""></form>
+        <form action="" className="space-y-[36px] px-[0px] xl:px-[54px]">
+          <div>
+            <label className="text-[16px] font-medium text-dark" htmlFor="your-name">
+              Your Name
+            </label>
+            <input
+              className="mt-[22px] h-[50px] w-full rounded-[10px] border border-accent-light px-[12px] text-[16px] focus:border-primary focus:outline-none sm:h-[75px] sm:px-[18px] sm:text-[20px]"
+              placeholder="Your Name"
+              type="text"
+              id="your-name"
+            />
+          </div>
+
+          <div>
+            <label className="text-[16px] font-medium text-dark" htmlFor="email">
+              Email Address
+            </label>
+            <input
+              className="mt-[22px] h-[50px] w-full rounded-[10px] border border-accent-light px-[12px] text-[16px] focus:border-primary focus:outline-none sm:h-[75px] sm:px-[18px] sm:text-[20px]"
+              placeholder="Your Email Address"
+              type="text"
+              id="email"
+            />
+          </div>
+
+          <div>
+            <label className="text-[16px] font-medium text-dark" htmlFor="subject">
+              Subject
+            </label>
+            <input
+              className="mt-[22px] h-[50px] w-full rounded-[10px] border border-accent-light px-[12px] text-[16px] focus:border-primary focus:outline-none sm:h-[75px] sm:px-[18px] sm:text-[20px]"
+              placeholder="Subject"
+              type="email"
+              id="subject"
+            />
+          </div>
+
+          <div>
+            <label className="text-[16px] font-medium text-dark" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              className="mt-[22px] h-[50px] w-full rounded-[10px] border border-accent-light px-[12px] pt-[13px] text-[16px] focus:border-primary focus:outline-none sm:h-[75px] sm:px-[18px] sm:pt-[10px] sm:text-[20px]"
+              placeholder="Additional Info (Optional)"
+              id="message"
+            />
+          </div>
+
+          <button className="mt-[49px] flex h-[55px] w-full items-center justify-center rounded-[5px] bg-primary text-[16px] text-background sm:w-[237px]">
+            Submit
+          </button>
+        </form>
       </div>
     </section>
   );
