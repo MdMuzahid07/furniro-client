@@ -5,12 +5,12 @@ import ArrowDownIcon from "../icons/ArrowDownIcon";
 
 const Comparison = () => {
   return (
-    <section className="mx-auto max-w-[1440px] px-[20px] pt-[34px] pb-[40px] sm:pb-[50px] md:px-[40px] md:pb-[70px] lg:px-[54px] lg:pb-[90px] xl:pb-[112px]">
-      <div className="flex">
+    <section className="mx-auto max-w-[1440px] overflow-x-auto px-[20px] pt-[34px] pb-[40px] sm:pb-[50px] md:px-[40px] md:pb-[70px] lg:px-[54px] lg:pb-[90px] xl:pb-[112px]">
+      <div className="flex w-full">
         {/* left side => product information panel */}
-        <div className="w-full max-w-[301px]">
+        <div className="w-[301px] max-w-[301px]">
           {/* header  */}
-          <div className="h-[350px] px-[36px] pt-[21px] pb-[172px]">
+          <div className="h-[350px] w-full px-[36px] pt-[21px] pb-[172px]">
             <h1 className="text-[28px] leading-[126.5%] font-medium text-dark">
               Go to Product page for more Products
             </h1>
@@ -22,7 +22,7 @@ const Comparison = () => {
 
           {/* main content */}
 
-          <div className="w-full border-t border-r border-septenary-light pl-[42px]">
+          <div className="w-[301px] border-t border-r border-septenary-light pl-[42px]">
             <h1 className="mt-[42px] mb-[28px] text-[28px] leading-[126.5%] font-medium text-dark">
               General{" "}
             </h1>
