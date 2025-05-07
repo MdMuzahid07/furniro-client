@@ -7,9 +7,9 @@ const OrderCardBoxIcon = ({ isDark = true, size }: { isDark?: boolean; size?: nu
       viewBox="0 0 28 28"
       fill={isDark ? "#ffffff" : "#000000"}
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="lucide lucide-package-icon lucide-package"
     >
       <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />

@@ -31,7 +31,7 @@ const UserDropdown = () => {
           </>
         }
         style=" w-[250px] h-[300px] bg-white relative -mr-[130px] sm:mr-[0px]"
-        closeOnOutsideClick={false}
+        // closeOnOutsideClick={false}
         closeTriggerStyle="absolute right-[30px] top-[30px]"
       >
         <div className="w-full px-[30px] pt-[28px]">

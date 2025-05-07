@@ -7,9 +7,9 @@ const LogoutIcon = ({ isDark = true, size }: { isDark?: boolean; size?: number }
       viewBox="0 0 28 28"
       fill={isDark ? "#ffffff" : "#000000"}
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="lucide lucide-log-out-icon lucide-log-out"
     >
       <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />

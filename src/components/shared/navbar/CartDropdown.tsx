@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import CartDropDownCard from "./CartDropDownCard";
 import DropDown from "@/components/ui/DropDown";
 import CartClose from "@/components/icons/CartClose";
 import CartIcon from "@/components/icons/CartIcon";
+import Link from "next/link";
 
 const fakeCart = [
   {
@@ -45,7 +47,7 @@ const CartDropdown = () => {
           </>
         }
         style="w-[300px] sm:w-[340px] md:w-[417px] h-[560px] sm:h-[650px] md:h-[746px] bg-white relative  -mr-[50px] sm:mr-[0px]"
-        closeOnOutsideClick={false}
+        // closeOnOutsideClick={false}
       >
         <>
           <div className="pt-[20px] pr-[20px] pl-[20px] sm:pt-[28px] sm:pr-[30px] sm:pl-[30px] md:pr-[40px]">
@@ -71,9 +73,12 @@ const CartDropdown = () => {
               <h1 className="text-[16px] font-semibold text-primary">Rs. 520,000.00</h1>
             </div>
             <div className="flex items-center gap-[14px] border-t border-tertiary-light px-[27px] py-[28px]">
-              <button className="px-auto w-full rounded-full border border-dark py-[6px] text-[12px] md:px-[30px]">
+              <Link
+                href="/cart"
+                className="px-auto w-full rounded-full border border-dark py-[6px] text-[12px] md:px-[30px]"
+              >
                 Cart
-              </button>
+              </Link>
               <button className="px-auto w-full rounded-full border border-dark py-[6px] text-[12px] md:px-[30px]">
                 Checkout
               </button>

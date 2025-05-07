@@ -7,9 +7,9 @@ const AccountSettingIcon = ({ isDark = true, size }: { isDark?: boolean; size?: 
       viewBox="0 0 24 24"
       fill={isDark ? "#ffffff" : "#000000"}
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="lucide lucide-user-round-pen-icon lucide-user-round-pen"
     >
       <path d="M2 21a8 8 0 0 1 10.821-7.487" />

@@ -11,6 +11,7 @@ interface DropDownProps {
   closeTrigger?: boolean;
   closeTriggerIcon?: React.ReactNode;
   closeTriggerStyle?: string;
+  onClickClose?: boolean;
 }
 
 const DropDown: React.FC<DropDownProps> = ({
