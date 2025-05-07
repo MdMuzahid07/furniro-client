@@ -54,9 +54,8 @@ const CheckoutAside = () => {
         Your personal data will be used to support your experience throughout this website, to
         manage access to your account, and for other purposes described in our{" "}
         <Link href="/privacy-policy" className="cursor-pointer font-semibold hover:underline">
-          privacy policy
+          privacy policy.
         </Link>
-        .
       </p>
 
       <div className="w-full sm:flex sm:justify-center">

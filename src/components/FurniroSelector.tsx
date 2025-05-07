@@ -28,7 +28,7 @@ const FurniroSelector = ({
   return (
     <div>
       <label className="text-[16px] font-medium text-dark" htmlFor={id}>
-        {label || "Country / Region"}
+        {label || ""}
       </label>
       <div className="relative h-[75px] w-full">
         <select
@@ -39,7 +39,7 @@ const FurniroSelector = ({
           className={`${style || "mt-[22px] h-[50px] w-full appearance-none rounded-[10px] border border-accent-light px-[12px] pr-[40px] pl-[18px] text-[16px] leading-[126.5%] focus:border-primary focus:outline-none sm:h-[75px] sm:px-[18px] sm:text-[20px]"}`}
         >
           <option className="text-accent-light" value="" disabled>
-            {placeholderText || "Choose a Country"}
+            {placeholderText || ""}
           </option>
           {options?.map((option) => (
             <option key={option?.value} value={option?.value}>

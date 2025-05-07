@@ -9,10 +9,10 @@ export const navLinks = [
   },
   {
     label: "About",
-    ref: "/",
+    ref: "/about-furniro",
   },
   {
     label: "Contact",
-    ref: "/",
+    ref: "/contact",
   },
 ];
