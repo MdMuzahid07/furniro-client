@@ -23,7 +23,7 @@ Saturday-Sunday: 9:00 - 21:00`,
 
 const ContactForm = () => {
   return (
-    <section className="mx-auto max-w-[1440px] px-[20px] pt-[30px] pb-[40px] sm:px-[40px] sm:pt-[45px] sm:pb-[50px] md:px-[70px] md:pt-[65px] md:pb-[63px] lg:px-[130px] lg:pt-[98px] xl:px-[191px]">
+    <section className="mx-auto max-w-[1440px] px-[20px] pt-[30px] pb-[40px] sm:px-[40px] sm:pt-[45px] sm:pb-[50px] md:px-[60px] md:pt-[65px] md:pb-[63px] lg:px-[80px] lg:pt-[98px] xl:px-[120px] 2xl:px-[191px]">
       <div className="sm:text-center">
         <h1 className="mb-[7px] text-[24px] font-semibold text-dark sm:text-[36px]">
           Get In Touch With Us
