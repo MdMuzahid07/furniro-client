@@ -5,6 +5,7 @@ interface PaginationProps {
   totalPages: number;
   onPageChange: (page: number) => void;
   showNext?: boolean;
+  style?: string;
 }
 
 const PaginationBar = ({
@@ -12,6 +13,7 @@ const PaginationBar = ({
   totalPages,
   onPageChange,
   showNext = true,
+  style,
 }: PaginationProps) => {
   // calculate which page numbers to show
   const getPageNumbers = () => {
@@ -27,7 +29,7 @@ const PaginationBar = ({
   };
 
   return (
-    <div className="flex items-center gap-[38px]">
+    <div className={`flex items-center gap-[38px] ${style}`}>
       {getPageNumbers()?.map((page) => (
         <button
           key={page}
