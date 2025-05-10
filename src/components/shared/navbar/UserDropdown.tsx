@@ -39,7 +39,7 @@ const UserDropdown = () => {
 
           <div className="mt-[20px] w-full space-y-[15px] border-t border-tertiary-light pt-[20px]">
             <button>
-              <Link href="/" className="flex w-full items-center gap-3">
+              <Link href="/profile" className="flex w-full items-center gap-3">
                 <AccountSettingIcon size={20} />
                 My Account
               </Link>
