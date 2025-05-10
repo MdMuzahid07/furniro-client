@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ProfileSettings = () => {
   return (
-    <section className="max-h-[700px] w-full overflow-y-auto pb-[30px] transition-all md:pl-[30px]">
+    <section className="max-h-[700px] w-full overflow-y-auto pb-[30px] transition-all">
       <div className="relative h-[90px] w-full bg-quaternary sm:h-[120px] md:h-[150px]">
         <Image
           src="/images/LocationBar-bg-img.png"
@@ -78,6 +78,7 @@ const ProfileSettings = () => {
 
       <div className="mt-[40px] gap-[30px] border-t border-septenary-light px-[10px] pt-[20px] sm:flex sm:items-center sm:px-[20px] sm:pt-[40px] lg:px-[50px]">
         <h1 className="text-[16px] font-medium text-danger sm:text-[20px]">Delete My Account</h1>
+
         <button className="mt-[20px] flex h-[50px] w-full cursor-pointer items-center justify-center rounded-[10px] bg-quaternary text-[14px] font-bold text-dark uppercase transition-all hover:bg-danger hover:text-background active:text-[16px] active:tracking-wide sm:mt-[0px] sm:max-w-[150px] sm:rounded-full">
           Delete
         </button>
