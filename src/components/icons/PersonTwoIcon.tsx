@@ -1,6 +1,6 @@
 import React from "react";
 
-const PersonTwoIcon = ({ isDark = true, size }: { isDark?: boolean; size?: number }) => {
+const PersonTwoIcon = ({ isDark = true, size }: { isDark?: boolean; size?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

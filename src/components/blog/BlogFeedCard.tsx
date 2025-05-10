@@ -6,7 +6,7 @@ import TagIcon from "../icons/TagIcon";
 const BlogFeedCard = () => {
   return (
     <div className="w-full">
-      <div className="w-full lg:h-[500px]">
+      <div className="w-full xl:h-[500px]">
         <Image
           src="/images/blog/laptop-big-image-1.png"
           width={900}
@@ -16,18 +16,18 @@ const BlogFeedCard = () => {
           priority
         />
       </div>
-      <ul className="mt-[17px] flex items-center gap-[35px]">
+      <ul className="mt-[17px] flex items-center gap-[10px] sm:gap-[35px]">
         <li className="flex items-center gap-[7px]">
-          <PersonTwoIcon />
-          <p className="font-accent-light text-[14px] sm:text-[16px]">Admin</p>
+          <PersonTwoIcon size=" size-[16px] sm:size-[20px]" />
+          <p className="font-accent-light text-[12px] sm:text-[16px]">Admin</p>
         </li>
         <li className="flex items-center gap-[7px]">
-          <CalenderIcon />
-          <p className="font-accent-light text-[14px] sm:text-[16px]">14 Oct 2022</p>
+          <CalenderIcon size=" size-[14px] sm:size-[20px]" />
+          <p className="font-accent-light text-[12px] sm:text-[16px]">14 Oct 2022</p>
         </li>
         <li className="flex items-center gap-[7px]">
-          <TagIcon />
-          <p className="font-accent-light text-[14px] sm:text-[16px]">Wood</p>
+          <TagIcon size=" size-[16px] sm:size-[24px]" />
+          <p className="font-accent-light text-[12px] sm:text-[16px]">Wood</p>
         </li>
       </ul>
 

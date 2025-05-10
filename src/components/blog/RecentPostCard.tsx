@@ -3,7 +3,7 @@ import Image from "next/image";
 const RecentPostCard = () => {
   return (
     <div className="flex w-full items-center gap-[12px]">
-      <div className="h-[80px] w-full max-w-[80px]">
+      <div className="h-[80px] w-full max-w-[80px] min-w-[80px]">
         <Image
           src="/images/comparison-card-img-1.png"
           alt="recent-post-card"

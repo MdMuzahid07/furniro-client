@@ -29,7 +29,7 @@ const PaginationBar = ({
   };
 
   return (
-    <div className={`flex items-center gap-[38px] ${style}`}>
+    <div className={`flex items-center gap-[30px] sm:gap-[38px] ${style}`}>
       {getPageNumbers()?.map((page) => (
         <button
           key={page}
