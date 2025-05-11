@@ -12,7 +12,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mb-2 border border-quaternary">
+    <div className="mb-2 rounded-[10px] border border-quaternary">
       <div className="flex items-center justify-between">
         <button
           onClick={() => setOpen((o) => !o)}
