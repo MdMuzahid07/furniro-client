@@ -42,19 +42,12 @@ const fakeOrders = [
         price: 29.99,
         quantity: 1,
       },
-      {
-        _id: "prod2",
-        title: "Peace Lily",
-        image: "/images/details-page-image-sofa.png",
-        price: 19.99,
-        quantity: 2,
-      },
     ],
   },
 ];
 
 const ReviewCard = () => {
-  const [writeReview, setWriteReview] = useState(false);
+  const [writeReview, setWriteReview] = useState<string | null>(null);
 
   return (
     <div className="relative max-h-[658px] w-full overflow-y-auto">
@@ -75,10 +68,10 @@ const ReviewCard = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
-              {myOrder?.items?.map((item) => (
-                <Accordion title="Products To Rating" key={item._id}>
-                  <div>
+            <Accordion title="Products To Rating">
+              <div className="space-y-4">
+                {myOrder?.items?.map((item) => (
+                  <div key={item._id}>
                     <div className="flex items-center gap-[16px] border-b border-septenary-light pb-4">
                       <Image
                         src={item.image}
@@ -97,17 +90,17 @@ const ReviewCard = () => {
                       </div>
 
                       <button
-                        onClick={() => setWriteReview(true)}
+                        onClick={() => setWriteReview(item?._id)}
                         className="h-[30px] w-fit cursor-pointer rounded-[5px] bg-quaternary px-2 font-semibold text-primary"
                       >
                         Write Review
                       </button>
                     </div>
-                    {writeReview && <ReviewForm />}
+                    {writeReview === item._id && <ReviewForm />}
                   </div>
-                </Accordion>
-              ))}
-            </div>
+                ))}
+              </div>
+            </Accordion>
           </div>
         ))}
       </div>
