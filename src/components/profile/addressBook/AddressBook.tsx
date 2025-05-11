@@ -1,4 +1,7 @@
+"use client";
+import { useState } from "react";
 import AddressCard from "./AddressCard";
+import AddNewAddressForm from "./AddNewAddressForm";
 
 const fakeData = {
   id: "1",
@@ -14,6 +17,8 @@ const fakeData = {
 };
 
 const AddressBook = () => {
+  const [addNewAddress, setAddNewAddress] = useState(false);
+
   return (
     <section className="w-full px-[10px] sm:px-[20px] lg:px-[50px]">
       <div className="flex justify-between">
@@ -21,17 +26,26 @@ const AddressBook = () => {
           Address Book
         </h1>
 
-        <button className="flex h-[30px] w-[100px] items-center justify-center bg-primary text-background">
-          Add New
-        </button>
+        {!addNewAddress && (
+          <button
+            onClick={() => setAddNewAddress(true)}
+            className="flex h-[30px] w-[100px] cursor-pointer items-center justify-center bg-primary text-background"
+          >
+            Add New
+          </button>
+        )}
       </div>
 
-      <div className="mt-[20px] grid max-h-[638px] grid-cols-1 gap-[20px] overflow-y-auto pb-[20px] sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-        <AddressCard address={fakeData} />
-        <AddressCard address={fakeData} />
-        <AddressCard address={fakeData} />
-        <AddressCard address={fakeData} />
-      </div>
+      {addNewAddress ? (
+        <AddNewAddressForm />
+      ) : (
+        <div className="mt-[20px] grid max-h-[638px] grid-cols-1 gap-[20px] overflow-y-auto pb-[20px] sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+          <AddressCard address={fakeData} />
+          <AddressCard address={fakeData} />
+          <AddressCard address={fakeData} />
+          <AddressCard address={fakeData} />
+        </div>
+      )}
     </section>
   );
 };
