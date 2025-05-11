@@ -9,7 +9,7 @@ const EditIcon = ({ size }: { size?: number }) => {
       stroke="currentColor"
       stroke-width="2"
       stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
       className="lucide lucide-square-pen-icon lucide-square-pen text-white"
     >
       <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />

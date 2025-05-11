@@ -82,8 +82,8 @@ const ReviewCard = () => {
                       />
                       <div className="flex-1">
                         <h4 className="text-[16px] font-medium">{item.title}</h4>
-                        <p className="text-[14px] text-gray-600">Price: ${item.price}</p>
-                        <p className="text-[14px] text-gray-600">Quantity: {item.quantity}</p>
+                        <p className="text-[14px] text-info">Price: ${item.price}</p>
+                        <p className="text-[14px] text-info">Quantity: {item.quantity}</p>
                       </div>
                       <div className="text-[14px] font-medium">
                         ${(item.price * item.quantity)?.toFixed(2)}
