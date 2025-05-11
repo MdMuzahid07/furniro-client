@@ -28,6 +28,29 @@ const fakeOrders = [
       },
     ],
   },
+  {
+    _id: "ORD123456",
+    status: "Delivered",
+    paymentMethod: "Cash on Delivery",
+    totalAmount: 89.97,
+    orderDate: "2025-05-10T14:30:00Z",
+    items: [
+      {
+        _id: "prod1",
+        title: "Snake Plant",
+        image: "/images/details-page-image-sofa.png",
+        price: 29.99,
+        quantity: 1,
+      },
+      {
+        _id: "prod2",
+        title: "Peace Lily",
+        image: "/images/details-page-image-sofa.png",
+        price: 19.99,
+        quantity: 2,
+      },
+    ],
+  },
 ];
 
 const ReviewCard = () => {
@@ -52,10 +75,10 @@ const ReviewCard = () => {
               </p>
             </div>
 
-            <Accordion title="Products To Rating">
-              <div className="space-y-4">
-                {myOrder?.items?.map((item) => (
-                  <div key={item._id}>
+            <div className="space-y-4">
+              {myOrder?.items?.map((item) => (
+                <Accordion title="Products To Rating" key={item._id}>
+                  <div>
                     <div className="flex items-center gap-[16px] border-b border-septenary-light pb-4">
                       <Image
                         src={item.image}
@@ -82,9 +105,9 @@ const ReviewCard = () => {
                     </div>
                     {writeReview && <ReviewForm />}
                   </div>
-                ))}
-              </div>
-            </Accordion>
+                </Accordion>
+              ))}
+            </div>
           </div>
         ))}
       </div>
