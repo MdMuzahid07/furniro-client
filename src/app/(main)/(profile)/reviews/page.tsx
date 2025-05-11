@@ -1,5 +1,11 @@
+import MyReviews from "@/components/profile/productReviews/MyReviews";
+
 const Reviews = () => {
-  return <div>Reviews</div>;
+  return (
+    <>
+      <MyReviews />
+    </>
+  );
 };
 
 export default Reviews;
