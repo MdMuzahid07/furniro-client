@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
+import ClientProvider from "@/provider/ClientProvider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${montserrat.variable} antialiased`}>{children}</body>
+      <body className={`${poppins.className} ${montserrat.variable} antialiased`}>
+        <ClientProvider>{children}</ClientProvider>
+      </body>
     </html>
   );
 }
